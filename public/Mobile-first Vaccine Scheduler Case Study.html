@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study | Mobile-first Vaccine Scheduler</title>
+</head>
+<body>
+    <h1>Mobile-first Vaccine Scheduler Case Study</h1>
+    <h2>Bootcamp Project, 2023</h2>
+    <hr />
+    <h3>Table of contents</h3>
+    <ol>
+        <li>Background</li>
+        <li>Goals</li>
+        <li>Competitive analysis</li>
+        <li>Generative research</li>
+        <li>How-might-we and POV statements</li>
+        <li>Personas</li>
+        <li>Information architecture</li>
+        <li>Interaction design</li>
+        <li>UI design</li>
+        <li>Prototyping and testing</li>
+    </ol>
+    <br />
+    <h3>Background</h3>
+    <p>Gustus Clinic is a brand new (and fictional) clinic that is still building their website. Offering care in multiple locations throughout the northeastern US, they aim to develop a function on their website that allows users to schedule vaccine appointments near them. We hypothesize the following:</p>
+    <ol>
+        <li>By providing an efficient and easy-to-use booking system, users will be able to successfully book an appointment.</li>
+        <li>If appointment times populate earliest availability and nearest location, users will find value in the product.</li>
+    </ol>
+    <br />
+    <h3>Goals</h3>
+    <p>We want to know what users prioritize and value in their decision-making for scheduling vaccine appointments so that we can understand how to implement a convenient and easy-to-use vaccine appointment-booking feature that maximizes user satisfaction.</p>
+    <ul>
+        <li>To understand how to design a vaccine appointment booking site for a clinic that is efficient, flexible, and convenient</li>
+        <li>To comply with mandatory COVID-19 protocols (e.g., screening questions)</li>
+        <li>To assess whether a user's insurance will be accepted</li>
+        <li>To display sites by nearest location and earliest availability</li>
+    </ul>
+    <br />
+    <h3>Competitive analysis</h3>
+    <p>Through a competitive analysis, the strengths, weaknesses, opportunities, and threats (SWOT) of CVS, Walgreens, Rite Aid, and Vaccines.gov were assessed to help inform design decisions. All four competitors share common strengths in that they <b>populate a list of all vaccination sites' phone numbers and addresses</b>; however, CVS and Vaccines.gov only display options to receive COVID-19 and flu. Walgreens and Rite Aid offers patients the ability to <b>get vaccinated against other diseases</b> (not merely COVID-19 and flu). CVS and Walgreens also offers users the ability to <b>schedule multiple vaccines on the same day</b>.</p>
+    <p>Rite Aid forces users to select whether they would like to receive the Moderna or Pfizer brand, but <b>they do not have the option to select 'no preference'</b>.</p>
+    <br />
+    <h3>Generative research</h3>
+        <p><b>User interviews</b> were conducted to assess how users book vaccine appointments. They are an ideal generative research method, as they allow for probing and follow-up questions. As the sample size is small, writing a survey would not be necessary. Findings from the eight users who we interviewed include:</p>
+        <ul>
+            <li><b>Participant 1:</b> Struggled with insurance in the past. Puts off appointments if the technology is not working. Relies on text reminders. Does not care about brand. Not confident in answering questions about health or insurance.</li>
+            <li><b>Participant 2:</b> Does not need text reminders but values them. Is able to recall her vaccine history. Prefers Pfizer but not strongly. Confident about answering questions about health or insurance. Keeps records of medical and insurance information.</li>
+            <li><b>Participant 3:</b> Relies on his wife to schedule appointments. Relies on text reminders. Does not care about brand. Confident about answering questions about health or insurance.</li>
+            <li><b>Participant 4:</b> Parents scheduled most of her appointments. Relies on text reminders. Does not care about brand. Confident about answering questions about health or insurance.</li>
+            <li><b>Participant 5:</b> Prefers to get vaccinated at CVS for convenience with the pharmacy. Is able to recall her vaccination history. Prefers Moderna but not strongly. Confident about answering questions about health. Not confident about answering questions about insurance.</li>
+            <li><b>Participant 6:</b> Relies on text reminders. Does not care about brand. Confident about answering questions about health and insurance.</li>
+            <li><b>Participant 7:</b> Does not struggle with booking vaccine appointments due to employment in healthcare. Does not prefer to get multiple vaccinations on the same day. Avoids J&J. Not confident about answering questions about health and insurance.</li>
+            <li><b>Participant 8:</b> Does not prefer to get multiple vaccinations on the same day. Writes appointment reminders on paper. Avoids J&J. Confident about answering questions about health. Not confident about answering questions about insurance.</li>
+        </ul>
+        <p>The following <b>insights</b> were learned from all eight participants:</p>
+        <ul>
+            <li>Value proximity and immediacy of appointments</li>
+            <li>Appreciate guidance for selecting a vaccine</li>
+            <li>Do not struggle to pay for vaccines</li>
+            <li>Struggled to book an appointment during the beginning of the COVID-19 pandemic</li>
+        </ul>
+    <p>View the affinity map in <a href="https://miro.com/app/board/uXjVPtEkIN0=/?inviteKey=eXRkRTJFRGYwSWdvSVoyRHBEKzd2OXdZYW02NGdqRGhyOFVoOGxvVmxPclZDSjU0YmlKOExkTHdxT1BKY1I5WTlXRlJDdmNoczEwMGZIQ213cGQ3dEdUVFFaS3pZYjVEL09RczBpV0NhS0ltaU91SkNYY2RUQkpyRUZmUU5hVjJBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=">Miro</a>.</p>
+    <br />
+    <h3>How-might-we and POV statements</h3>
+    <p>How might we help users...</p>
+    <ul>
+        <li>Locate a nearby clinic? </li>
+        <li>Schedule a vaccination appointment within at least one week?</li>
+        <li>Schedule multiple vaccines per visit?</li>
+        <li>Remember their upcoming vaccination appointments?</li>
+        <li>Troubleshoot if they need assistance?</li>
+    </ul>
+    <p>We would like to offer users a quick and easy way to schedule vaccine appointments…</p>
+    <uL>
+        <li>by proximity</li>
+        <li>by earliest availability</li>
+        <li>for multiple vaccinations at once (if the user requests it)</li>
+        <li>with appointment reminders</li>
+        <li>without technical difficulties</li>
+    </uL>
+    <br />
+    <h3>Personas</h3>
+    <p>Personas were crafted with insight obtained from user interviews. They served as a reference for feature prioritization.</p>
+    <img src="./images/Persona_Michelle.png" height="100%" width="100%" alt="Woman reading from a computer">
+    <hr />
+    <img src="./images/Persona_Liam.png" height="100%" width="100%" alt="Student taking notes from a computer">
+    <hr />
+    <img src="./images/Persona_Pamela.png" height="100%" width="100%" alt="Woman smiling with computer on her lap">
+    <br />
+    <h3>Information architecture</h3>
+    <p>A card sort was used for organizing information architecture and evaluate the importance of each card (40 cards total; n=3). Data were analyzed in Maze.</p>
+    <p>The information architecture was sorted into four categories:</p>
+    <ol>
+        <li>Account</li>
+        <li>Schedule an appointment</li>
+        <li>Resources</li>
+        <li>Contact us</li>
+    </ol>
+    <p>All three participants agreed that the following cards should be sorted into <b>Account</b>:</p>
+    <ul>
+        <li>Clinical History</li>
+        <li>Delete Account</li>
+        <li>Log In</li>
+        <li>Log Out</li>
+        <li>Payment</li>
+        <li>Register</li>
+        <li>Vaccination Records</li>
+    </ul>
+    <p>All three participants agreed that the following cards should be sorted into <b>Schedule an Appointment</b>:</p>
+    <ul>
+        <li>COVID-19</li>
+        <li>Flu</li>
+        <li>Meningitis</li>
+        <li>Shingles</li>
+    </ul>
+    <p>All three participants agreed that the <b>FAQs</b> card should be sorted into <b>Resources</b>.</p>
+    <p>The names of cards whose categorization participants did not agree upon will be reevaluated. Select examples of cards whose categorization <b>did not reach consensus</b> among participants include:</p>
+    <ul>
+        <li>Insurance</li>
+        <li>Recommendations</li>
+        <li>Reschedule Appointment</li>
+        <li>Lost COVID-19 Vaccination Card</li>
+        <li>Terms and Conditions</li>
+        <li>Prescribing Information</li>
+        <li>Privacy</li>
+    </ul>
+    <br />
+    <h3>Interaction design</h3>
+    <p>The landing page was designed to be minimalist, preventing users from having to scroll to find what they need. CDC and COVID-19 information was intended to be easy to locate. Incorporation of visuals allow users to quickly scan prompts without much focus.</p>
+    <br />
+    <h3>UI design</h3>
+    <br />
+    <h3>Prototyping and testing</h3>
+    <br />
+    <h3>Get in touch!</h3>
+    <p>603-686-4879 </p>
+    <p>d96prior@gmail.com</p>
+</body>
+</html>
